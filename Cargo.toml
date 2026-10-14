@@ -1,0 +1,31 @@
+# Copyright 2018-2026 the Deno authors. MIT license.
+# Standalone copy of ext/tls from denoland/deno v2.9.7, with the workspace
+# dependency versions pinned explicitly and rustls bumped to 0.23.45.
+# See NOTICE.md.
+
+[package]
+name = "deno_tls"
+version = "0.246.0"
+authors = ["the Deno authors"]
+edition = "2024"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/frontal-labs/deno_tls"
+description = "TLS for Deno (Frontal Labs fork with patched rustls)"
+
+[lib]
+path = "lib.rs"
+
+[dependencies]
+deno_core = "0.412.0"
+deno_error = "=0.7.1"
+deno_native_certs = "0.3.0"
+log = { version = "0.4.28", features = ["kv"] }
+rustls = { version = "=0.23.45", default-features = false, features = ["logging", "std", "tls12", "aws_lc_rs"] }
+rustls-pemfile = "2"
+rustls-tokio-stream = "=0.8.0"
+rustls-webpki = "0.103"
+serde = { version = "1.0.149", features = ["derive"] }
+thiserror = "2.0.12"
+tokio = { version = "1.47.1", features = ["full"] }
+webpki-roots = "0.26"
