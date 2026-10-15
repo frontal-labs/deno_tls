@@ -14,7 +14,7 @@ repository = "https://github.com/frontal-labs/deno_tls"
 description = "TLS for Deno (Frontal Labs fork with patched rustls)"
 
 [lib]
-path = "lib.rs"
+path = "src/lib.rs"
 
 [dependencies]
 deno_core = "0.412.0"
