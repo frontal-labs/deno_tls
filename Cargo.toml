@@ -28,4 +28,4 @@ rustls-webpki = "0.103"
 serde = { version = "1.0.149", features = ["derive"] }
 thiserror = "2.0.12"
 tokio = { version = "1.47.1", features = ["full"] }
-webpki-roots = "0.26"
+webpki-roots = "1.0"
