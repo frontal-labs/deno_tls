@@ -18,7 +18,7 @@ path = "src/lib.rs"
 
 [dependencies]
 deno_core = "0.412.0"
-deno_error = "=0.7.1"
+deno_error = "=0.7.3"
 deno_native_certs = "0.3.0"
 log = { version = "0.4.28", features = ["kv"] }
 rustls = { version = "=0.23.45", default-features = false, features = ["logging", "std", "tls12", "aws_lc_rs"] }
